@@ -1,9 +1,14 @@
 <template>
   <div id="nav">
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/contact">Contact</router-link> |
+    <router-link :to="{name: 'allList'}">All List</router-link> |
+    <router-link :to="{name: 'todolist'}">To do List Page</router-link>
   </div>
-  <router-view/>
+  <div class="p-3 m-3 border border-1">
+    <router-view/>
+  </div>
 </template>
 
 <style lang="scss">
